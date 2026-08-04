@@ -1,0 +1,18 @@
+# Copy this file to terraform.tfvars and update the values for your environment.
+# Do not add credentials, passwords, private keys, or other secrets.
+
+aws_region = "us-east-1"
+aws_profile = ""
+
+project_name = "cloudgenius-aws-ssm-patching-lab"
+environment  = "lab"
+instance_type = "t3.micro"
+patch_group   = "linux-lab"
+
+# Sunday at 03:00 UTC.
+maintenance_schedule = "cron(0 3 ? * SUN *)"
+
+# Safe default: scan and report compliance without installing patches.
+# Change to true only after reviewing the plan, confirming backups,
+# approving the maintenance period, and understanding reboot requirements.
+install_patches = false
