@@ -1,1 +1,0 @@
-# cloudgenius-aws-ssm-patching-lab
